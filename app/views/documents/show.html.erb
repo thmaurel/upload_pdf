@@ -1,0 +1,6 @@
+<%= @document.name %>
+<%#= cl_image_tag @document.attachment.key %>
+<%= link_to "link text...", cl_image_path(@document.attachment.key, format: :pdf ) %>
+
+<embed src="<%= cl_image_path(@document.attachment.key) %>" width="500" height="375"
+ type="application/pdf">
